@@ -100,6 +100,25 @@
         "year": "yyyy",
         "full_long_small_date": "HH:MM'<br/><small>'dddd',' d mmm yyyy'</small>'"
     },
+        "bigdateformats": {
+        "fallback": [
+            [1000000000, "Il y a %.2f milliards d'années"],
+            [1000000, "Il y a %.1f millions d'années"],
+            [1000, "Il y a %.1f mille ans"],
+            [1, "Il y a %f ans"]
+        ],
+        "compact": [
+            [1000000000, "%.2f MMM"],
+            [1000000, "%.1f MM"],
+            [1000, "%.1f M"],
+            [1, "%f ans"]
+        ],
+        "verbose": [
+            [1000000000, "Il y a %.2f milliards d'années"],
+            [1000000, "Il y a %.1f millions d'années"],
+            [1000, "Il y a %.1f mille ans"],
+            [1, "Il y a %f ans"]
+        ],
     "era_labels": {
         "positive_year": {
             "prefix": "",
